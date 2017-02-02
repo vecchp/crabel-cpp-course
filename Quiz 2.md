@@ -11,6 +11,16 @@ No, C does not supports function overloading. Printf works using a feature in C 
 There is only one printf function, but the compiler uses a special calling convention to call it,
 where whatever arguments you provide are put in sequence on the stack.
 
+It does however support variadic functions:
+```cpp
+long func(char, double, int, ...);
+
+long func(char a, double b, int c, ...)
+{
+    /* ... */
+}
+```
+
 ### In C++ pattern matching, what is the typical way to make patterns more board?
 What? Are we talking about templates with types and adding more?
 
