@@ -60,8 +60,8 @@ parallel_sum_2(Iterator begin, Iterator end)
 
 int main()
 {
-    std::vector<int> v;
-    for(auto i = 0; i < 1000000; ++i) {
+    std::vector<long> v;
+    for(auto i = 0; i < 10000; ++i) {
         v.push_back(i);
     }
     auto total = parallel_sum_1(v.begin(), v.end());
